@@ -22,7 +22,7 @@ const BlogList = () => {
       <br/>
       <br/>
       <br/>
-     <a target='_blank' href='https://positive-sunshine-b406a96713.strapiapp.com/admin'><button class="button-64" role="button"><span class="text">Click here to access the admin panel</span></button></a>
+     <a target='_blank' href='https://positive-sunshine-b406a96713.strapiapp.com/admin'><button class="button-64" ><span class="text">Click here to access the admin panel</span></button></a>
       <br/>
       <h1>Published Blogs</h1>
       <br/>
@@ -30,7 +30,7 @@ const BlogList = () => {
         {posts?.map((post) => (
              <Link to={`/blog/${post.id}`}>
           <div key={post.id} className='blog-post'>
-            <img src={post.attributes?.Cover?.data?.attributes?.url}/>
+            <img src={post.attributes?.Cover?.data?.attributes?.url} alt=''/>
             <p>{post.attributes?.Title}</p>
             <div className='card-footer'>
                 <p>{new Date().toDateString()}</p>
