@@ -23,6 +23,8 @@ const BlogList = () => {
       <br/>
       <br/>
      <a target='_blank' rel="noreferrer" href='https://positive-sunshine-b406a96713.strapiapp.com/admin'><button class="button-64" ><span class="text">Click here to access the admin panel</span></button></a>
+     {!posts?.length?<div className='loader-blog'>Loading posts, please wait</div>:
+     <>
       <br/>
       <h1>Published Blogs</h1>
       <br/>
@@ -41,7 +43,7 @@ const BlogList = () => {
             </div>
             </Link>
         ))}
-      </div>
+      </div></>}
     </div>
   );
 };
