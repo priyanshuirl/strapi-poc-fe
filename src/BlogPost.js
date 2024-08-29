@@ -6,15 +6,14 @@ const BlogPost = () => {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
 
-  const getPost = async () => {
-    const data = await fetchPostBySlug(slug);
-    setPost(data?.data);
-  };
-
 
   useEffect(() => {
+    const getPost = async () => {
+      const data = await fetchPostBySlug(slug);
+      setPost(data?.data);
+    };
     getPost();
-  }, [slug]);
+  }, [slug,]);
 
 
   return (<div className='container'>
