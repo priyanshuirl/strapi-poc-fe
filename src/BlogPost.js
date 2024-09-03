@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchPostBySlug, fetchPostPreviewBySlug } from './api';
+import { fetchPostBySlug, } from './api';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = ({isPreview=false}) => {
