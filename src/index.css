@@ -73,13 +73,13 @@ tbody > tr:last-of-type > * {
   top: 0;
   left: 0;
   background-color: rgb(123, 121, 255);
-  padding: 8px;
-  height: 60px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   z-index: 9;
+  flex-direction: column;
 }
 
 .container{
@@ -252,4 +252,16 @@ gap:24px;
   font-weight: 600;
 
   color:rgb(123, 121, 255)
+}
+
+.preview-strip{
+  background-color: #27ae60;
+  color: #fff;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
 }

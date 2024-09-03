@@ -10,6 +10,9 @@ function App() {
   },{
     path:'/blog/:slug',
     element:<BlogPost/>
+  },{
+    path:'/blog/preview/:slug',
+    element:<BlogPost isPreview={true}/>
   }])
   return (
       <div className="App">
