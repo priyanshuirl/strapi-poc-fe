@@ -92,7 +92,6 @@ tbody > tr:last-of-type > * {
 display: grid;
 grid-template-columns: repeat(3,300px);
 width: 80%;
-align-items: center;
 justify-content: center;
 gap:24px;
 }
@@ -104,6 +103,7 @@ gap:24px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  height: 100%;
 }
 
 .blog-post > img{
