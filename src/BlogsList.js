@@ -35,7 +35,7 @@ const BlogList = () => {
             <img src={post.attributes?.Cover?.data?.attributes?.url} alt=''/>
             <p>{post.attributes?.Title}</p>
             <div className='card-footer'>
-                <p>{new Date().toDateString()}</p>
+                <p>{new Date(post.attributes?.publishedAt).toDateString()}</p>
             <Link to={`/blog/${post.id}`}>
             <button className='button-68'>Read the post</button>
             </Link>
